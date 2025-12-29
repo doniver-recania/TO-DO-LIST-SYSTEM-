@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>To-Do List</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<div class="container0">
+  <h1>TO-DO LIST</h1>
+  <h2>Welcome, set your task 🔔</h2>
+</div>
+
+<div class="container1">
+  <button id="btnTask">Task</button>
+  <button id="btnFavorite">Favorite Task 💛</button>
+  <button id="btnHistory">History</button>
+</div>
+
+<!-- Task Box -->
+<div id="taskContent" class="content fixed">
+  <button id="btnExitTask" class="close-btn">✕</button>
+  <h2>Task</h2>
+</div>
+
+<!-- Favorite Box -->
+<div id="favoriteContent" class="content fixed">
+  <button id="btnExitFavorite" class="close-btn">✕</button>
+  <h2>Favorite Tasks</h2>
+</div>
+
+<!-- History Box -->
+<div id="historyContent" class="content fixed">
+  <button id="btnExitHistory" class="close-btn">✕</button>
+  <h2>History</h2>
+</div>
+
+<!-- Add Task Box -->
+<div id="addTaskContent" class="content fixed">
+  <button id="btnExitAddTask" class="close-btn">✕</button>
+  <h2>Add Task</h2>
+  <input type="text" id="taskInput" placeholder="Write your task here..." />
+  <br><br>
+  <button id="btnSaveTask">Save Task</button>
+</div>
+
+<div class="add-task-container">
+  <button id="btnAddTask">+ Add Task</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

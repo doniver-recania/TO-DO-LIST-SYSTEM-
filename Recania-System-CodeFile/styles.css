@@ -1,0 +1,171 @@
+/* ---------- Body & Layout ---------- */
+body {
+    margin: 0;
+    font-family: system-ui, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 40px;
+    background-color: #f0f0f0;
+}
+
+/* ---------- Header Container ---------- */
+.container0 {
+    background-color: #007bff;
+    color: #fff;
+    padding: 40px;
+    width: 80%;
+    text-align: center;
+    border-radius: 2%;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* ---------- Buttons Container ---------- */
+.container1 {
+    background-color: #fff;
+    color: #333;
+    padding: 20px;
+    width: 80%;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* ---------- General Buttons ---------- */
+button {
+    margin: 8px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.25s;
+    background-color: #007bff;
+    color: #fff;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* ---------- Add Task Button ---------- */
+#btnAddTask {
+    background-color: #28a745;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 10px;
+    padding: 12px 24px;
+}
+
+#btnAddTask:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+/* ---------- Pop-up Box Style ---------- */
+.content.fixed {
+    position: absolute;
+    top: 250px;
+    left: 50%;
+    transform: translateX(-50%) translateY(-6px);
+    width: 90%;
+    max-width: 400px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s, transform 0.2s;
+    z-index: 10;
+    background-color: #e6f0ff;
+    border: 3px solid #007bff;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    padding: 25px;
+    text-align: left;
+}
+
+.content.fixed.show {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+    pointer-events: auto;
+}
+
+/* ---------- Close Button ---------- */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #007bff;
+    transition: color 0.2s;
+}
+
+.close-btn:hover {
+    color: #ff3333;
+}
+
+/* ---------- Input Field ---------- */
+#taskInput {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #007bff;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+}
+
+#taskInput:focus {
+    border-color: #0056b3;
+}
+
+/* ---------- Task List Items ---------- */
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 12px;
+    border-bottom: 1px solid #ccc;
+    font-size: 16px;
+    margin-bottom: 6px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    transition: background 0.2s;
+}
+
+.task-item:hover {
+    background-color: #e0f0ff;
+}
+
+/* Left-side content (favorite + title) */
+.task-item > div:first-child {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* ---------- Buttons inside task ---------- */
+.favorite-task,
+.toggle-status,
+.delete-task {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.delete-task {
+    color: #ff3333;
+}
+
+.delete-task:hover {
+    color: #cc0000;
+    transform: scale(1.2);
+}
+
+.toggle-status:hover,
+.favorite-task:hover {
+    transform: scale(1.2);
+}
