@@ -1,7 +1,7 @@
 # TO-DO-LIST-SYSTEM-
-Name: Doniver D. Recania
-Section: BSCS 2A
-Subjects: DC 101 and CC 105
+Name: Doniver D. Recania - 
+Section: BSCS 2A - 
+Subjects: DC 101 and CC 105 - 
 2025
 
 Title: To-Do List
